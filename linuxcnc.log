@@ -1,0 +1,36 @@
+Nov 12 21:03:09 beaglebone msgd:0: startup pid=947 flavor=rt-preempt rtlevel=1 usrlevel=1 halsize=524288 shm=Posix cc=gcc 6.3.0 20170516  version=v0.1~-----~84c94e8
+Nov 12 21:03:09 beaglebone msgd:0: ØMQ=4.2.1 czmq=4.0.2 protobuf=3.0.0 atomics=gcc intrinsics    libwebsockets=2.0.3
+Nov 12 21:03:09 beaglebone msgd:0: configured: sha=84c94e8
+Nov 12 21:03:09 beaglebone msgd:0: built:      Oct  6 2018 13:51:21 sha=84c94e8
+Nov 12 21:03:09 beaglebone msgd:0: register_stuff: actual hostname as announced by avahi='beaglebone.local'
+Nov 12 21:03:09 beaglebone msgd:0: zeroconf: registering: 'Log service on beaglebone.local pid 947'
+Nov 12 21:03:10 beaglebone msgd:0: zeroconf: registered 'Log service on beaglebone.local pid 947' _machinekit._tcp 0 TXT "uuid=a42c8c6b-4025-4f83-ba28-dad21114744a" "instance=5bbeda62-e6be-11e8-8c12-5cf821c496b1" "service=log" "dsn=ipc:///tmp/0.log.a42c8c6b-4025-4f83-ba28-dad21114744a"
+Nov 12 21:03:23 beaglebone msgd:0: rtapi_app exit detected - scheduled shutdown
+Nov 12 21:03:25 beaglebone msgd:0: msgd shutting down
+Nov 12 21:03:25 beaglebone msgd:0: zeroconf: unregistering 'Log service on beaglebone.local pid 947'
+Nov 12 21:03:25 beaglebone msgd:0: log buffer hwm: 0% (0 msgs, 0 bytes out of 524288)
+Nov 12 21:03:25 beaglebone msgd:0: normal shutdown - global segment detached
+Nov 12 21:08:06 beaglebone msgd:0: startup pid=1784 flavor=rt-preempt rtlevel=1 usrlevel=1 halsize=524288 shm=Posix cc=gcc 6.3.0 20170516  version=v0.1~-----~84c94e8
+Nov 12 21:08:06 beaglebone msgd:0: ØMQ=4.2.1 czmq=4.0.2 protobuf=3.0.0 atomics=gcc intrinsics    libwebsockets=2.0.3
+Nov 12 21:08:06 beaglebone msgd:0: configured: sha=84c94e8
+Nov 12 21:08:06 beaglebone msgd:0: built:      Oct  6 2018 13:51:21 sha=84c94e8
+Nov 12 21:08:06 beaglebone msgd:0: register_stuff: actual hostname as announced by avahi='beaglebone.local'
+Nov 12 21:08:06 beaglebone msgd:0: zeroconf: registering: 'Log service on beaglebone.local pid 1784'
+Nov 12 21:08:07 beaglebone msgd:0: zeroconf: registered 'Log service on beaglebone.local pid 1784' _machinekit._tcp 0 TXT "uuid=a42c8c6b-4025-4f83-ba28-dad21114744a" "instance=0ca43390-e6bf-11e8-bb10-5cf821c496b1" "service=log" "dsn=ipc:///tmp/0.log.a42c8c6b-4025-4f83-ba28-dad21114744a"
+Nov 12 21:08:16 beaglebone msgd:0: rtapi_app exit detected - scheduled shutdown
+Nov 12 21:08:18 beaglebone msgd:0: msgd shutting down
+Nov 12 21:08:18 beaglebone msgd:0: zeroconf: unregistering 'Log service on beaglebone.local pid 1784'
+Nov 12 21:08:18 beaglebone msgd:0: log buffer hwm: 0% (0 msgs, 0 bytes out of 524288)
+Nov 12 21:08:18 beaglebone msgd:0: normal shutdown - global segment detached
+Nov 12 21:25:00 beaglebone msgd:0: startup pid=3107 flavor=rt-preempt rtlevel=1 usrlevel=1 halsize=524288 shm=Posix cc=gcc 6.3.0 20170516  version=v0.1~-----~84c94e8
+Nov 12 21:25:00 beaglebone msgd:0: ØMQ=4.2.1 czmq=4.0.2 protobuf=3.0.0 atomics=gcc intrinsics    libwebsockets=2.0.3
+Nov 12 21:25:00 beaglebone msgd:0: configured: sha=84c94e8
+Nov 12 21:25:00 beaglebone msgd:0: built:      Oct  6 2018 13:51:21 sha=84c94e8
+Nov 12 21:25:00 beaglebone msgd:0: register_stuff: actual hostname as announced by avahi='beaglebone.local'
+Nov 12 21:25:00 beaglebone msgd:0: zeroconf: registering: 'Log service on beaglebone.local pid 3107'
+Nov 12 21:25:01 beaglebone msgd:0: zeroconf: registered 'Log service on beaglebone.local pid 3107' _machinekit._tcp 0 TXT "uuid=a42c8c6b-4025-4f83-ba28-dad21114744a" "instance=6914725a-e6c1-11e8-92d1-5cf821c496b1" "service=log" "dsn=ipc:///tmp/0.log.a42c8c6b-4025-4f83-ba28-dad21114744a"
+Nov 12 21:25:09 beaglebone msgd:0: rtapi_app exit detected - scheduled shutdown
+Nov 12 21:25:11 beaglebone msgd:0: msgd shutting down
+Nov 12 21:25:11 beaglebone msgd:0: zeroconf: unregistering 'Log service on beaglebone.local pid 3107'
+Nov 12 21:25:11 beaglebone msgd:0: log buffer hwm: 0% (0 msgs, 0 bytes out of 524288)
+Nov 12 21:25:11 beaglebone msgd:0: normal shutdown - global segment detached
