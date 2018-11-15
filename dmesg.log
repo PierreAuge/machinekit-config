@@ -1,0 +1,563 @@
+[    0.000000] Booting Linux on physical CPU 0x0
+[    0.000000] Initializing cgroup subsys cpu
+[    0.000000] Linux version 3.8.13-xenomai-r83 (root@a1-imx6q-wandboard-2gb) (gcc version 4.9.2 (Debian 4.9.2-10) ) #1 Thu Jan 5 01:32:32 UTC 2017
+[    0.000000] CPU: ARMv7 Processor [413fc082] revision 2 (ARMv7), cr=50c5387d
+[    0.000000] CPU: PIPT / VIPT nonaliasing data cache, VIPT aliasing instruction cache
+[    0.000000] Machine: Generic AM33XX (Flattened Device Tree), model: TI AM335x BeagleBone
+[    0.000000] Memory policy: ECC disabled, Data cache writeback
+[    0.000000] On node 0 totalpages: 130816
+[    0.000000] free_area_init_node: node 0, pgdat c095b9d0, node_mem_map c0a2f000
+[    0.000000]   Normal zone: 1024 pages used for memmap
+[    0.000000]   Normal zone: 0 pages reserved
+[    0.000000]   Normal zone: 129792 pages, LIFO batch:31
+[    0.000000] AM335X ES2.1 (l2cache sgx neon )
+[    0.000000] pcpu-alloc: s0 r0 d32768 u32768 alloc=1*32768
+[    0.000000] pcpu-alloc: [0] 0 
+[    0.000000] Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 129792
+[    0.000000] Kernel command line: console=tty0 console=ttyO0,115200n8 capemgr.disable_partno=BB-BONELT-HDMI root=/dev/mmcblk0p1 rootfstype=ext4 rootwait coherent_pool=1M net.ifnames=0 quiet cape_universal=enable
+[    0.000000] PID hash table entries: 2048 (order: 1, 8192 bytes)
+[    0.000000] Dentry cache hash table entries: 65536 (order: 6, 262144 bytes)
+[    0.000000] Inode-cache hash table entries: 32768 (order: 5, 131072 bytes)
+[    0.000000] __ex_table already sorted, skipping sort
+[    0.000000] allocated 1048576 bytes of page_cgroup
+[    0.000000] please try 'cgroup_disable=memory' option if you don't want memory cgroups
+[    0.000000] Memory: 511MB = 511MB total
+[    0.000000] Memory: 503624k/503624k available, 20664k reserved, 0K highmem
+[    0.000000] Virtual kernel memory layout:
+    vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+    fixmap  : 0xfff00000 - 0xfffe0000   ( 896 kB)
+    vmalloc : 0xe0800000 - 0xff000000   ( 488 MB)
+    lowmem  : 0xc0000000 - 0xe0000000   ( 512 MB)
+    pkmap   : 0xbfe00000 - 0xc0000000   (   2 MB)
+    modules : 0xbf800000 - 0xbfe00000   (   6 MB)
+      .text : 0xc0008000 - 0xc0894f7c   (8756 kB)
+      .init : 0xc0895000 - 0xc08d02c4   ( 237 kB)
+      .data : 0xc08d2000 - 0xc095eec0   ( 564 kB)
+       .bss : 0xc095eec0 - 0xc0a2eed8   ( 833 kB)
+[    0.000000] NR_IRQS:0 nr_irqs:0 0
+[    0.000000] IRQ: Found an INTC at 0xfa200000 (revision 5.0) with 128 interrupts
+[    0.000000] Total of 128 interrupts on 1 active controller
+[    0.000000] OMAP clockevent source: GPTIMER1 at 24000000 Hz
+[    0.000000] sched_clock: 32 bits at 24MHz, resolution 41ns, wraps every 178956ms
+[    0.000000] I-pipe, 24.000 MHz clocksource
+[    0.000000] OMAP clocksource: GPTIMER2 at 24000000 Hz
+[    0.000000] Interrupt pipeline (release #3)
+[    0.000000] Console: colour dummy device 80x30
+[    0.000000] console [tty0] enabled
+[    0.000742] Calibrating delay loop... 993.47 BogoMIPS (lpj=969728)
+[    0.029197] pid_max: default: 32768 minimum: 301
+[    0.029292] Security Framework initialized
+[    0.029336] Mount-cache hash table entries: 512
+[    0.034164] Initializing cgroup subsys cpuacct
+[    0.034189] Initializing cgroup subsys memory
+[    0.034230] Initializing cgroup subsys blkio
+[    0.034301] CPU: Testing write buffer coherency: ok
+[    0.034609] Setting up static identity map for 0x80522958 - 0x805229a4
+[    0.035602] devtmpfs: initialized
+[    0.041645] omap_hwmod: wd_timer2: _wait_target_disable failed
+[    0.081239] pinctrl core: initialized pinctrl subsystem
+[    0.081327] rstctl core: initialized rstctl subsystem
+[    0.081576] regulator-dummy: no parameters
+[    0.081801] NET: Registered protocol family 16
+[    0.083372] DMA: preallocated 1024 KiB pool for atomic coherent allocations
+[    0.088806] pinctrl-single 44e10800.pinmux: 142 pins at pa f9e10800 size 568
+[    0.089252] platform 49000000.edma: alias fck already exists
+[    0.089269] platform 49000000.edma: alias fck already exists
+[    0.089281] platform 49000000.edma: alias fck already exists
+[    0.089786] gpiochip_add: registered GPIOs 0 to 31 on device: gpio
+[    0.089867] OMAP GPIO hardware version 0.1
+[    0.090342] gpiochip_add: registered GPIOs 32 to 63 on device: gpio
+[    0.090840] gpiochip_add: registered GPIOs 64 to 95 on device: gpio
+[    0.091386] gpiochip_add: registered GPIOs 96 to 127 on device: gpio
+[    0.091606] of_get_named_gpio_flags exited with status 52
+[    0.091623] gpio-rctrl rstctl.4: loaded OK
+[    0.094039] No ATAGs?
+[    0.094056] hw-breakpoint: debug architecture 0x4 unsupported.
+[    0.095174] cpsw.0: No hwaddr in dt. Using 50:65:83:db:f7:ac from efuse
+[    0.095192] cpsw.1: No hwaddr in dt. Using 50:65:83:db:f7:ae from efuse
+[    0.102369] bio: create slab <bio-0> at 0
+[    0.107548] edma-dma-engine edma-dma-engine.0: TI EDMA DMA engine driver
+[    0.107677] of_get_named_gpio_flags: can't parse gpios property
+[    0.107786] vmmcsd_fixed: 3300 mV 
+[    0.108997] SCSI subsystem initialized
+[    0.109217] usbcore: registered new interface driver usbfs
+[    0.109319] usbcore: registered new interface driver hub
+[    0.109508] usbcore: registered new device driver usb
+[    0.110539] omap_i2c 44e0b000.i2c: bus 0 rev0.11 at 400 kHz
+[    0.111386] input: tps65217_pwr_but as /devices/ocp.3/44e0b000.i2c/i2c-0/0-0024/input/input0
+[    0.112463] DCDC1: at 1500 mV 
+[    0.113264] vdd_mpu: 925 <--> 1325 mV at 1325 mV 
+[    0.114013] vdd_core: 925 <--> 1150 mV at 1100 mV 
+[    0.114756] LDO1: at 1800 mV 
+[    0.115496] LDO2: at 3300 mV 
+[    0.116883] LDO3: 1800 mV 
+[    0.117645] LDO4: at 3300 mV 
+[    0.118314] tps65217 0-0024: TPS65217 ID 0xe version 1.2
+[    0.118815] omap_i2c 44e0b000.i2c: unable to select pin group
+[    0.119253] omap_i2c 4819c000.i2c: bus 1 rev0.11 at 100 kHz
+[    0.120284] omap_i2c 4819c000.i2c: unable to select pin group
+[    0.120414] media: Linux media interface: v0.10
+[    0.120466] Linux video capture interface: v2.00
+[    0.120539] pps_core: LinuxPPS API ver. 1 registered
+[    0.120547] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[    0.120569] PTP clock support registered
+[    0.120929] Advanced Linux Sound Architecture Driver Initialized.
+[    0.121457] NetLabel: Initializing
+[    0.121468] NetLabel:  domain hash size = 128
+[    0.121473] NetLabel:  protocols = UNLABELED CIPSOv4
+[    0.121528] NetLabel:  unlabeled traffic allowed by default
+[    0.121769] Switching to clocksource ipipe_tsc
+[    0.146049] NET: Registered protocol family 2
+[    0.146582] TCP established hash table entries: 4096 (order: 3, 32768 bytes)
+[    0.146663] TCP bind hash table entries: 4096 (order: 4, 81920 bytes)
+[    0.146760] TCP: Hash tables configured (established 4096 bind 4096)
+[    0.146817] TCP: reno registered
+[    0.146830] UDP hash table entries: 256 (order: 1, 12288 bytes)
+[    0.146855] UDP-Lite hash table entries: 256 (order: 1, 12288 bytes)
+[    0.147046] NET: Registered protocol family 1
+[    0.147419] RPC: Registered named UNIX socket transport module.
+[    0.147430] RPC: Registered udp transport module.
+[    0.147437] RPC: Registered tcp transport module.
+[    0.147443] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[    0.147622] Trying to unpack rootfs image as initramfs...
+[    0.383093] Freeing initrd memory: 3564K
+[    0.383434] hw perfevents: enabled with ARMv7 Cortex-A8 PMU driver, 5 counters available
+[    0.383672] CPU PMU: attempt to register multiple PMU devices!
+[    0.383695] arm-pmu: probe of arm-pmu failed with error -28
+[    0.384081] omap2_mbox_probe: platform not supported
+[    0.537385] I-pipe: head domain Xenomai registered.
+[    0.537413] Xenomai: hal/arm started.
+[    0.538472] Xenomai: scheduling class idle registered.
+[    0.538491] Xenomai: scheduling class rt registered.
+[    0.542002] Xenomai: real-time nucleus v2.6.3 (Lies and Truths) loaded.
+[    0.542011] Xenomai: debug mode enabled.
+[    0.542377] Xenomai: starting native API services.
+[    0.542386] Xenomai: starting POSIX services.
+[    0.542513] Xenomai: starting RTDM services.
+[    0.543188] VFS: Disk quotas dquot_6.5.2
+[    0.543245] Dquot-cache hash table entries: 1024 (order 0, 4096 bytes)
+[    0.543866] NFS: Registering the id_resolver key type
+[    0.543931] Key type id_resolver registered
+[    0.543939] Key type id_legacy registered
+[    0.544144] fuse init (API version 7.20)
+[    0.544436] Btrfs loaded
+[    0.544525] msgmni has been set to 990
+[    0.545514] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 248)
+[    0.545527] io scheduler noop registered
+[    0.545534] io scheduler deadline registered
+[    0.545551] io scheduler cfq registered (default)
+[    0.546467] tps65217-bl tps65217-bl: no platform data provided
+[    0.546504] tps65217-bl: probe of tps65217-bl failed with error -22
+[    0.546937] Serial: 8250/16550 driver, 4 ports, IRQ sharing enabled
+[    0.548086] omap_uart 44e09000.serial: did not get pins for uart0 error: -19
+[    0.548246] 44e09000.serial: ttyO0 at MMIO 0x44e09000 (irq = 72) is a OMAP UART0
+[    0.560018] console [ttyO0] enabled
+[    0.560604] [drm] Initialized drm 1.1.0 20060810
+[    0.565923] brd: module loaded
+[    0.568654] loop: module loaded
+[    0.568734] at24 0-0050: 32768 byte 24c256 EEPROM, writable, 1 bytes/write
+[    0.568772] at24 1-0054: 32768 byte 24c256 EEPROM, writable, 1 bytes/write
+[    0.568802] at24 1-0055: 32768 byte 24c256 EEPROM, writable, 1 bytes/write
+[    0.568836] at24 1-0056: 32768 byte 24c256 EEPROM, writable, 1 bytes/write
+[    0.568866] at24 1-0057: 32768 byte 24c256 EEPROM, writable, 1 bytes/write
+[    0.575465] bone-capemgr bone_capemgr.9: Baseboard: 'A335BNLT,BWA5,1650BBWG5746'
+[    0.575485] bone-capemgr bone_capemgr.9: compatible-baseboard=ti,beaglebone-black
+[    0.575521] bone-capemgr bone_capemgr.9: Skipping disabled cape with part# BB-BONELT-HDMI
+[    0.599572] bone-capemgr bone_capemgr.9: bone: Invalid signature 'ffffffff' at slot 0
+[    0.607777] bone-capemgr bone_capemgr.9: slot #0: No cape found
+[    0.645247] bone-capemgr bone_capemgr.9: slot #1: No cape found
+[    0.682353] bone-capemgr bone_capemgr.9: slot #2: No cape found
+[    0.719463] bone-capemgr bone_capemgr.9: slot #3: No cape found
+[    0.725702] bone-capemgr bone_capemgr.9: slot #4: specific override
+[    0.725723] bone-capemgr bone_capemgr.9: bone: Using override eeprom data at slot 4
+[    0.725739] bone-capemgr bone_capemgr.9: slot #4: 'Bone-LT-eMMC-2G,00A0,Texas Instrument,BB-BONE-EMMC-2G'
+[    0.725809] bone-capemgr bone_capemgr.9: slot #5: specific override
+[    0.725825] bone-capemgr bone_capemgr.9: bone: Using override eeprom data at slot 5
+[    0.725838] bone-capemgr bone_capemgr.9: slot #5: 'Bone-Black-HDMI,00A0,Texas Instrument,BB-BONELT-HDMI'
+[    0.725891] bone-capemgr bone_capemgr.9: slot #6: specific override
+[    0.725906] bone-capemgr bone_capemgr.9: bone: Using override eeprom data at slot 6
+[    0.725920] bone-capemgr bone_capemgr.9: slot #6: 'Bone-Black-HDMIN,00A0,Texas Instrument,BB-BONELT-HDMIN'
+[    0.726038] bone-capemgr bone_capemgr.9: Skipping loading of disabled cape with part# BB-BONELT-HDMI
+[    0.726230] bone-capemgr bone_capemgr.9: loader: before slot-4 BB-BONE-EMMC-2G:00A0 (prio 1)
+[    0.726244] bone-capemgr bone_capemgr.9: loader: check slot-4 BB-BONE-EMMC-2G:00A0 (prio 1)
+[    0.726271] bone-capemgr bone_capemgr.9: initialized OK.
+[    0.727339] OneNAND driver initializing
+[    0.728021] usbcore: registered new interface driver cdc_ether
+[    0.728065] usbcore: registered new interface driver rndis_host
+[    0.728151] usbcore: registered new interface driver cdc_ncm
+[    0.728436] bone-capemgr bone_capemgr.9: loader: after slot-4 BB-BONE-EMMC-2G:00A0 (prio 1)
+[    0.728458] bone-capemgr bone_capemgr.9: slot #4: Requesting firmware 'cape-bone-2g-emmc1.dtbo' for board-name 'Bone-LT-eMMC-2G', version '00A0'
+[    0.728475] bone-capemgr bone_capemgr.9: slot #4: dtbo 'cape-bone-2g-emmc1.dtbo' loaded; converting to live tree
+[    0.728676] bone-capemgr bone_capemgr.9: slot #4: #2 overlays
+[    0.729179] bone-capemgr bone_capemgr.9: slot #4: Applied #2 overlays.
+[    0.729195] bone-capemgr bone_capemgr.9: loader: done slot-4 BB-BONE-EMMC-2G:00A0 (prio 1)
+[    0.729559] usbcore: registered new interface driver cdc_acm
+[    0.729569] cdc_acm: USB Abstract Control Model driver for USB modems and ISDN adapters
+[    0.729576] Initializing USB Mass Storage driver...
+[    0.729631] usbcore: registered new interface driver usb-storage
+[    0.729638] USB Mass Storage support registered.
+[    0.729757] musb-hdrc: version 6.0, ?dma?, otg (peripheral+host)
+[    0.729965] musb-hdrc musb-hdrc.0.auto: pdev->id = 0
+[    0.729983] musb-hdrc musb-hdrc.0.auto: drivers/usb/musb/musb_dsps.c:480 dsps_musb_init: OK
+[    0.730006] musb-hdrc: ConfigData=0xde (UTMI-8, dyn FIFOs, bulk combine, bulk split, HB-ISO Rx, HB-ISO Tx, SoftConn)
+[    0.730017] musb-hdrc: MHDRC RTL version 2.0 
+[    0.730025] musb-hdrc: setup fifo_mode 4
+[    0.730041] musb-hdrc: 28/31 max ep, 16384/16384 memory
+[    0.730114] musb-hdrc musb-hdrc.0.auto: *** mode=3
+[    0.730124] musb-hdrc musb-hdrc.0.auto: *** power=250
+[    0.730493] musb-hdrc musb-hdrc.1.auto: pdev->id = 1
+[    0.730506] musb-hdrc musb-hdrc.1.auto: drivers/usb/musb/musb_dsps.c:480 dsps_musb_init: OK
+[    0.730528] musb-hdrc: ConfigData=0xde (UTMI-8, dyn FIFOs, bulk combine, bulk split, HB-ISO Rx, HB-ISO Tx, SoftConn)
+[    0.730537] musb-hdrc: MHDRC RTL version 2.0 
+[    0.730543] musb-hdrc: setup fifo_mode 4
+[    0.730553] musb-hdrc: 28/31 max ep, 16384/16384 memory
+[    0.730609] musb-hdrc musb-hdrc.1.auto: *** mode=1
+[    0.730619] musb-hdrc musb-hdrc.1.auto: *** power=250
+[    0.730629] musb-hdrc musb-hdrc.1.auto: MUSB HDRC host driver
+[    0.730798] bone-capemgr bone_capemgr.9: loader: before slot-6 BB-BONELT-HDMIN:00A0 (prio 2)
+[    0.730811] bone-capemgr bone_capemgr.9: loader: check slot-6 BB-BONELT-HDMIN:00A0 (prio 2)
+[    0.730826] bone-capemgr bone_capemgr.9: loader: after slot-6 BB-BONELT-HDMIN:00A0 (prio 2)
+[    0.730848] bone-capemgr bone_capemgr.9: slot #6: Requesting firmware 'cape-boneblack-hdmin-00A0.dtbo' for board-name 'Bone-Black-HDMIN', version '00A0'
+[    0.730878] bone-capemgr bone_capemgr.9: slot #6: dtbo 'cape-boneblack-hdmin-00A0.dtbo' loaded; converting to live tree
+[    0.731321] bone-capemgr bone_capemgr.9: slot #6: #2 overlays
+[    0.732334] platform 4830e000.fb: alias fck already exists
+[    0.732453] bone-capemgr bone_capemgr.9: slot #6: Applied #2 overlays.
+[    0.732466] bone-capemgr bone_capemgr.9: loader: done slot-6 BB-BONELT-HDMIN:00A0 (prio 2)
+[    0.732672] musb-hdrc musb-hdrc.1.auto: new USB bus registered, assigned bus number 1
+[    0.732706] musb-hdrc musb-hdrc.1.auto: supports USB remote wakeup
+[    0.732773] usb usb1: default language 0x0409
+[    0.732805] usb usb1: udev 1, busnum 1, minor = 0
+[    0.732815] usb usb1: New USB device found, idVendor=1d6b, idProduct=0002
+[    0.732826] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    0.732835] usb usb1: Product: MUSB HDRC host driver
+[    0.732844] usb usb1: Manufacturer: Linux 3.8.13-xenomai-r83 musb-hcd
+[    0.732852] usb usb1: SerialNumber: musb-hdrc.1.auto
+[    0.733317] usb usb1: usb_probe_device
+[    0.733333] usb usb1: configuration #1 chosen from 1 choice
+[    0.733372] usb usb1: adding 1-0:1.0 (config #1, interface 0)
+[    0.733469] hub 1-0:1.0: usb_probe_interface
+[    0.733480] hub 1-0:1.0: usb_probe_interface - got id
+[    0.733496] hub 1-0:1.0: USB hub found
+[    0.733518] hub 1-0:1.0: 1 port detected
+[    0.733527] hub 1-0:1.0: standalone hub
+[    0.733536] hub 1-0:1.0: individual port power switching
+[    0.733543] hub 1-0:1.0: no over-current protection
+[    0.733552] hub 1-0:1.0: Single TT
+[    0.733561] hub 1-0:1.0: TT requires at most 8 FS bit times (666 ns)
+[    0.733570] hub 1-0:1.0: power on to power good time: 10ms
+[    0.733589] hub 1-0:1.0: local power source is good
+[    0.733652] hub 1-0:1.0: enabling power on all ports
+[    0.734214] mousedev: PS/2 mouse device common for all mice
+[    0.735078] lsm303dlhc_acc accelerometer driver: init
+[    0.735173] i2c-core: driver [lsm303dlhc_acc] using legacy suspend method
+[    0.735180] i2c-core: driver [lsm303dlhc_acc] using legacy resume method
+[    0.735190] lsm303dlhc_mag driver: init
+[    0.735226] lsm330_acc accelerometer driver: init
+[    0.735260] i2c-core: driver [lsm330_acc] using legacy suspend method
+[    0.735267] i2c-core: driver [lsm330_acc] using legacy resume method
+[    0.735277] lsm330_gyr: gyroscope sysfs driver init
+[    0.735809] omap_rtc 44e3e000.rtc: rtc core: registered 44e3e000.rtc as rtc0
+[    0.735971] i2c /dev entries driver
+[    0.736789] pps_ldisc: PPS line discipline registered
+[    0.736857] Driver for 1-wire Dallas network protocol.
+[    0.737951] omap_wdt: OMAP Watchdog Timer Rev 0x01: initial timeout 60 sec
+[    0.738313] device-mapper: ioctl: 4.23.1-ioctl (2012-12-18) initialised: dm-devel@redhat.com
+[    0.738542] of_get_named_gpio_flags exited with status 6
+[    0.738552] of_get_named_gpio_flags: can't parse gpios property
+[    0.738560] of_get_named_gpio_flags: can't parse gpios property
+[    0.738578] omap_hsmmc mmc.5: of_parse_phandle_with_args of 'reset' failed
+[    0.745808] omap_hsmmc mmc.5: Failed to get rstctl; not using any
+[    0.746081] edma-dma-engine edma-dma-engine.0: allocated channel for 0:25
+[    0.746116] edma-dma-engine edma-dma-engine.0: allocated channel for 0:24
+[    0.746266] mmc.5 supply vmmc_aux not found, using dummy regulator
+[    0.746536] omap_hsmmc mmc.5: pins are not configured from the driver
+[    0.772346] of_get_named_gpio_flags: can't parse gpios property
+[    0.772358] of_get_named_gpio_flags: can't parse gpios property
+[    0.772366] of_get_named_gpio_flags: can't parse gpios property
+[    0.772397] gpio-rctrl rstctl.4: gpio_rctrl_request eMMC_RSTn
+[    0.772460] omap_hsmmc mmc.11: Got rstctl (gpio:#0 name eMMC_RSTn) label:eMMC_RSTn
+[    0.772471] gpio-rctrl rstctl.4: gpio_rctrl_deassert eMMC_RSTn
+[    0.772650] edma-dma-engine edma-dma-engine.0: allocated channel for 0:3
+[    0.772680] edma-dma-engine edma-dma-engine.0: allocated channel for 0:2
+[    0.772994] mmc.11 supply vmmc_aux not found, using dummy regulator
+[    0.773068] omap_hsmmc mmc.11: pins are not configured from the driver
+[    0.799766] pinctrl-single 44e10800.pinmux: pin 44e10854 already requested by 44e10800.pinmux; cannot claim for gpio-leds.8
+[    0.811435] pinctrl-single 44e10800.pinmux: pin-21 (gpio-leds.8) status -22
+[    0.818724] pinctrl-single 44e10800.pinmux: could not request pin 21 on device pinctrl-single
+[    0.827637] leds-gpio gpio-leds.8: pins are not configured from the driver
+[    0.827657] of_get_named_gpio_flags exited with status 53
+[    0.827668] of_get_named_gpio_flags exited with status 54
+[    0.827677] of_get_named_gpio_flags exited with status 55
+[    0.827685] of_get_named_gpio_flags exited with status 56
+[    0.827697] of_get_named_gpio_flags exited with status 53
+[    0.827833] of_get_named_gpio_flags exited with status 54
+[    0.827941] of_get_named_gpio_flags exited with status 55
+[    0.828030] of_get_named_gpio_flags exited with status 56
+[    0.828315] ledtrig-cpu: registered to indicate activity on CPUs
+[    0.828524] edma-dma-engine edma-dma-engine.0: allocated channel for 0:36
+[    0.828572] omap-sham 53100000.sham: hw accel on OMAP rev 4.3
+[    0.829736] omap-aes 53500000.aes: OMAP AES hw accel rev: 3.2
+[    0.829803] edma-dma-engine edma-dma-engine.0: allocated channel for 0:5
+[    0.829833] edma-dma-engine edma-dma-engine.0: allocated channel for 0:6
+[    0.832259] usbcore: registered new interface driver usbhid
+[    0.832272] usbhid: USB HID core driver
+[    0.832973] ashmem: initialized
+[    0.833207] logger: created 256K log 'log_main'
+[    0.833376] logger: created 256K log 'log_events'
+[    0.833554] logger: created 256K log 'log_radio'
+[    0.833717] logger: created 256K log 'log_system'
+[    0.835598] TCP: cubic registered
+[    0.835656] NET: Registered protocol family 10
+[    0.836295] NET: Registered protocol family 17
+[    0.836495] Key type dns_resolver registered
+[    0.836799] VFP support v0.3: implementor 41 architecture 3 part 30 variant c rev 3
+[    0.836819] ThumbEE CPU extension supported.
+[    0.836847] Registering SWP/SWPB emulation handler
+[    0.837100] hub 1-0:1.0: state 7 ports 1 chg 0000 evt 0000
+[    0.837148] hub 1-0:1.0: hub_suspend
+[    0.837173] usb usb1: bus auto-suspend, wakeup 1
+[    0.837686] registered taskstats version 1
+[    0.839042] of_get_named_gpio_flags: can't parse gpios property
+[    0.839061] tilcdc 4830e000.fb: No power control GPIO
+[    0.842168] mmc0: host does not support reading read-only switch. assuming write-enable.
+[    0.844172] mmc0: new high speed SDHC card at address b368
+[    0.845198] mmcblk0: mmc0:b368 C8BAM 7.45 GiB 
+[    0.846980]  mmcblk0: p1
+[    0.900105] mmc1: BKOPS_EN bit is not set
+[    0.908127] mmc1: new high speed MMC card at address 0001
+[    0.908470] mmcblk1: mmc1:0001 S10004 3.56 GiB 
+[    0.908575] mmcblk1boot0: mmc1:0001 S10004 partition 1 4.00 MiB
+[    0.908676] mmcblk1boot1: mmc1:0001 S10004 partition 2 4.00 MiB
+[    0.909550]  mmcblk1: p1
+[    0.912220]  mmcblk1boot1: unknown partition table
+[    0.914786]  mmcblk1boot0: unknown partition table
+[    0.952212] tilcdc 4830e000.fb: found TDA19988
+[    0.952754] [drm] Supports vblank timestamp caching Rev 1 (10.10.2010).
+[    0.952762] [drm] No driver support for vblank timestamp query.
+[    1.059021] tilcdc 4830e000.fb: Not sure which CEA mode to set, leaving as DVI
+[    1.077725] Console: switching to colour frame buffer device 160x64
+[    1.094451] tilcdc 4830e000.fb: fb0:  frame buffer device
+[    1.094460] tilcdc 4830e000.fb: registered panic notifier
+[    1.094485] [drm] Initialized tilcdc 1.0.0 20121205 on minor 0
+[    1.095316] omap_rtc 44e3e000.rtc: setting system clock to 2000-01-01 00:00:00 UTC (946684800)
+[    1.098919] ALSA device list:
+[    1.098939]   No soundcards found.
+[    1.099492] Freeing init memory: 236K
+[    8.763452] EXT4-fs (mmcblk0p1): mounted filesystem with ordered data mode. Opts: (null)
+[    9.368062] systemd[1]: System time before build time, advancing clock.
+[    9.421315] systemd[1]: Failed to insert module 'kdbus': Function not implemented
+[    9.449556] systemd[1]: systemd 230 running in system mode. (+PAM +AUDIT +SELINUX +IMA +APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ -LZ4 +SECCOMP +BLKID +ELFUTILS +KMOD +IDN)
+[    9.450155] systemd[1]: Detected architecture arm.
+[    9.451506] systemd[1]: Set hostname to <beaglebone>.
+[    9.988086] systemd[1]: Reached target Swap.
+[    9.988869] systemd[1]: Started Forward Password Requests to Wall Directory Watch.
+[    9.989324] systemd[1]: Listening on /dev/initctl Compatibility Named Pipe.
+[    9.989442] systemd[1]: Reached target Encrypted Volumes.
+[    9.989696] systemd[1]: Listening on Syslog Socket.
+[    9.990666] systemd[1]: Set up automount Arbitrary Executable File Formats File System Automount Point.
+[    9.991137] systemd[1]: Listening on Journal Socket.
+[    9.991447] systemd[1]: Listening on Journal Socket (/dev/log).
+[    9.991850] systemd[1]: Created slice User and Session Slice.
+[    9.992120] systemd[1]: Created slice System Slice.
+[    9.992239] systemd[1]: Reached target Slices.
+[    9.995946] systemd[1]: Starting Create list of required static device nodes for the current kernel...
+[   10.003367] systemd[1]: Mounting POSIX Message Queue File System...
+[   10.024861] systemd[1]: Started Dispatch Password Requests to Console Directory Watch.
+[   10.025280] systemd[1]: Listening on udev Control Socket.
+[   10.029063] systemd[1]: Mounting /sys/kernel/debug...
+[   10.029526] systemd[1]: Listening on udev Kernel Socket.
+[   10.073679] systemd[1]: Starting Load Kernel Modules...
+[   10.079177] systemd[1]: Created slice system-getty.slice.
+[   10.080485] systemd[1]: Created slice system-serial\x2dgetty.slice.
+[   10.093495] systemd[1]: Starting Journal Service...
+[   10.103207] systemd[1]: Listening on fsck to fsckd communication Socket.
+[   10.120775] systemd[1]: Starting File System Check on Root Device...
+[   10.120938] systemd[1]: Reached target Remote File Systems (Pre).
+[   10.121130] systemd[1]: Reached target Remote File Systems.
+[   10.147267] systemd[1]: Starting LSB: Set console font and keymap...
+[   10.214935] systemd[1]: Mounted POSIX Message Queue File System.
+[   10.215244] systemd[1]: Mounted /sys/kernel/debug.
+[   10.227741] systemd[1]: Started Create list of required static device nodes for the current kernel.
+[   10.264795] systemd[1]: Started Load Kernel Modules.
+[   10.266134] systemd[1]: Started LSB: Set console font and keymap.
+[   10.289912] systemd[1]: Started File System Check Daemon to report status.
+[   10.303063] systemd[1]: Starting Apply Kernel Variables...
+[   10.337231] systemd[1]: Mounting FUSE Control File System...
+[   10.389482] systemd[1]: Starting Create Static Device Nodes in /dev...
+[   10.438949] systemd[1]: Started File System Check on Root Device.
+[   10.457874] systemd[1]: Started Apply Kernel Variables.
+[   10.485338] systemd[1]: Mounted FUSE Control File System.
+[   10.534385] systemd[1]: Started Create Static Device Nodes in /dev.
+[   10.550719] systemd[1]: Starting udev Kernel Device Manager...
+[   10.718658] systemd[1]: Started Journal Service.
+[   11.424735] EXT4-fs (mmcblk0p1): re-mounted. Opts: errors=remount-ro
+[   11.670229] systemd-journald[530]: Received request to flush runtime journal from PID 1
+[   17.139909] usb0: MAC 50:65:83:db:f7:ae
+[   17.139927] usb0: HOST MAC 50:65:83:db:f7:ad
+[   17.140025]  gadget: Ethernet Gadget, version: Memorial Day 2008
+[   17.140046]  gadget: g_ether ready
+[   17.140085] musb-hdrc musb-hdrc.0.auto: MUSB HDRC host driver
+[   17.151700] musb-hdrc musb-hdrc.0.auto: new USB bus registered, assigned bus number 2
+[   17.151756] musb-hdrc musb-hdrc.0.auto: supports USB remote wakeup
+[   17.151822] usb usb2: default language 0x0409
+[   17.151853] usb usb2: udev 1, busnum 2, minor = 128
+[   17.151865] usb usb2: New USB device found, idVendor=1d6b, idProduct=0002
+[   17.151875] usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[   17.151885] usb usb2: Product: MUSB HDRC host driver
+[   17.151894] usb usb2: Manufacturer: Linux 3.8.13-xenomai-r83 musb-hcd
+[   17.151903] usb usb2: SerialNumber: musb-hdrc.0.auto
+[   17.152351] usb usb2: usb_probe_device
+[   17.152367] usb usb2: configuration #1 chosen from 1 choice
+[   17.152406] usb usb2: adding 2-0:1.0 (config #1, interface 0)
+[   17.152528] hub 2-0:1.0: usb_probe_interface
+[   17.152539] hub 2-0:1.0: usb_probe_interface - got id
+[   17.152554] hub 2-0:1.0: USB hub found
+[   17.152582] hub 2-0:1.0: 1 port detected
+[   17.152591] hub 2-0:1.0: standalone hub
+[   17.152600] hub 2-0:1.0: individual port power switching
+[   17.152609] hub 2-0:1.0: no over-current protection
+[   17.152617] hub 2-0:1.0: Single TT
+[   17.152627] hub 2-0:1.0: TT requires at most 8 FS bit times (666 ns)
+[   17.152636] hub 2-0:1.0: power on to power good time: 10ms
+[   17.152656] hub 2-0:1.0: local power source is good
+[   17.152706] hub 2-0:1.0: enabling power on all ports
+[   17.252854] hub 2-0:1.0: state 7 ports 1 chg 0000 evt 0000
+[   17.252911] hub 2-0:1.0: hub_suspend
+[   17.252939] usb usb2: bus auto-suspend, wakeup 1
+[   17.638939] IPv6: ADDRCONF(NETDEV_UP): usb0: link is not ready
+[   22.174647] tilcdc 4830e000.fb: timeout waiting for framedone
+[   23.920899] omap_rng 48310000.rng: base address of priv is -97452032
+[   23.922369] omap_rng 48310000.rng: OMAP Random Number Generator ver. 20
+[   37.897058] EXT4-fs (mmcblk1p1): mounted filesystem with ordered data mode. Opts: (null)
+[  124.965417] usb usb1: usb wakeup-resume
+[  124.965465] usb usb1: usb auto-resume
+[  124.965485] hub 1-0:1.0: hub_resume
+[  124.965532] hub 1-0:1.0: port 1: status 0101 change 0001
+[  125.069210] hub 1-0:1.0: state 7 ports 1 chg 0002 evt 0000
+[  125.069266] hub 1-0:1.0: port 1, status 0101, change 0000, 12 Mb/s
+[  125.174581] usb 1-1: new full-speed USB device number 2 using musb-hdrc
+[  125.293702] usb 1-1: ep0 maxpacket = 8
+[  125.295063] usb 1-1: skipped 1 descriptor after interface
+[  125.295078] usb 1-1: skipped 1 descriptor after interface
+[  125.295088] usb 1-1: skipped 1 descriptor after interface
+[  125.295199] usb 1-1: default language 0x0409
+[  125.296125] usb 1-1: udev 2, busnum 1, minor = 1
+[  125.296141] usb 1-1: New USB device found, idVendor=046d, idProduct=c52b
+[  125.296152] usb 1-1: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[  125.296161] usb 1-1: Product: USB Receiver
+[  125.296170] usb 1-1: Manufacturer: Logitech
+[  125.296578] usb 1-1: usb_probe_device
+[  125.296596] usb 1-1: configuration #1 chosen from 1 choice
+[  125.301269] usb 1-1: adding 1-1:1.0 (config #1, interface 0)
+[  125.301601] usbhid 1-1:1.0: usb_probe_interface
+[  125.301618] usbhid 1-1:1.0: usb_probe_interface - got id
+[  125.303327] usb 1-1: adding 1-1:1.1 (config #1, interface 1)
+[  125.303588] usbhid 1-1:1.1: usb_probe_interface
+[  125.303602] usbhid 1-1:1.1: usb_probe_interface - got id
+[  125.305950] usb 1-1: adding 1-1:1.2 (config #1, interface 2)
+[  125.306143] usbhid 1-1:1.2: usb_probe_interface
+[  125.306157] usbhid 1-1:1.2: usb_probe_interface - got id
+[  125.309643] usbhid 1-1:1.2: looking for a minor, starting at 96
+[  125.310331] logitech-djreceiver 0003:046D:C52B.0003: hiddev0,hidraw0: USB HID v1.11 Device [Logitech USB Receiver] on usb-musb-hdrc.1.auto-1/input2
+[  125.310677] hub 1-0:1.0: state 7 ports 1 chg 0000 evt 0002
+[  125.310706] hub 1-0:1.0: port 1 enable change, status 00000103
+[  126.665755] input: Logitech Unifying Device. Wireless PID:2011 as /devices/ocp.3/47400000.usb/musb-hdrc.1.auto/usb1/1-1/1-1:1.2/0003:046D:C52B.0003/input/input1
+[  126.666497] logitech-djdevice 0003:046D:C52B.0004: input,hidraw1: USB HID v1.11 Keyboard [Logitech Unifying Device. Wireless PID:2011] on usb-musb-hdrc.1.auto-1:1
+[  126.667971] input: Logitech Unifying Device. Wireless PID:1024 as /devices/ocp.3/47400000.usb/musb-hdrc.1.auto/usb1/1-1/1-1:1.2/0003:046D:C52B.0003/input/input2
+[  126.672167] logitech-djdevice 0003:046D:C52B.0005: input,hidraw2: USB HID v1.11 Mouse [Logitech Unifying Device. Wireless PID:1024] on usb-musb-hdrc.1.auto-1:3
+[  186.071607] hub 1-0:1.0: state 7 ports 1 chg 0000 evt 0002
+[  186.071660] hub 1-0:1.0: port 1, status 0100, change 0001, 12 Mb/s
+[  186.071676] usb 1-1: USB disconnect, device number 2
+[  186.071686] usb 1-1: unregistering device
+[  186.071698] usb 1-1: unregistering interface 1-1:1.0
+[  186.072125] usb 1-1: unregistering interface 1-1:1.1
+[  186.072396] usb 1-1: unregistering interface 1-1:1.2
+[  186.072570] usbhid 1-1:1.2: removing 96 minor
+[  186.083751] usb 1-1: usb_disable_device nuking all URBs
+[  186.194201] hub 1-0:1.0: debounce: port 1: total 100ms stable 100ms status 0x100
+[  186.194309] hub 1-0:1.0: hub_suspend
+[  186.194339] usb usb1: bus auto-suspend, wakeup 1
+[  334.436060] usb usb1: usb wakeup-resume
+[  334.436108] usb usb1: usb auto-resume
+[  334.436127] hub 1-0:1.0: hub_resume
+[  334.436165] hub 1-0:1.0: port 1: status 0101 change 0001
+[  334.537918] hub 1-0:1.0: state 7 ports 1 chg 0002 evt 0000
+[  334.537970] hub 1-0:1.0: port 1, status 0101, change 0000, 12 Mb/s
+[  334.643327] usb 1-1: new full-speed USB device number 3 using musb-hdrc
+[  334.762448] usb 1-1: ep0 maxpacket = 8
+[  334.763800] usb 1-1: skipped 1 descriptor after interface
+[  334.763815] usb 1-1: skipped 1 descriptor after interface
+[  334.763825] usb 1-1: skipped 1 descriptor after interface
+[  334.763936] usb 1-1: default language 0x0409
+[  334.764859] usb 1-1: udev 3, busnum 1, minor = 2
+[  334.764874] usb 1-1: New USB device found, idVendor=046d, idProduct=c52b
+[  334.764885] usb 1-1: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[  334.764894] usb 1-1: Product: USB Receiver
+[  334.764902] usb 1-1: Manufacturer: Logitech
+[  334.765299] usb 1-1: usb_probe_device
+[  334.765316] usb 1-1: configuration #1 chosen from 1 choice
+[  334.769204] usb 1-1: adding 1-1:1.0 (config #1, interface 0)
+[  334.769464] usbhid 1-1:1.0: usb_probe_interface
+[  334.769480] usbhid 1-1:1.0: usb_probe_interface - got id
+[  334.771216] usb 1-1: adding 1-1:1.1 (config #1, interface 1)
+[  334.771388] usbhid 1-1:1.1: usb_probe_interface
+[  334.771401] usbhid 1-1:1.1: usb_probe_interface - got id
+[  334.773290] usb 1-1: adding 1-1:1.2 (config #1, interface 2)
+[  334.773464] usbhid 1-1:1.2: usb_probe_interface
+[  334.773477] usbhid 1-1:1.2: usb_probe_interface - got id
+[  334.777139] usbhid 1-1:1.2: looking for a minor, starting at 96
+[  334.777976] logitech-djreceiver 0003:046D:C52B.0008: hiddev0,hidraw0: USB HID v1.11 Device [Logitech USB Receiver] on usb-musb-hdrc.1.auto-1/input2
+[  334.778370] hub 1-0:1.0: state 7 ports 1 chg 0000 evt 0002
+[  334.778402] hub 1-0:1.0: port 1 enable change, status 00000103
+[  335.692481] input: Logitech Unifying Device. Wireless PID:2011 as /devices/ocp.3/47400000.usb/musb-hdrc.1.auto/usb1/1-1/1-1:1.2/0003:046D:C52B.0008/input/input3
+[  335.693231] logitech-djdevice 0003:046D:C52B.0009: input,hidraw1: USB HID v1.11 Keyboard [Logitech Unifying Device. Wireless PID:2011] on usb-musb-hdrc.1.auto-1:1
+[  335.694692] input: Logitech Unifying Device. Wireless PID:1024 as /devices/ocp.3/47400000.usb/musb-hdrc.1.auto/usb1/1-1/1-1:1.2/0003:046D:C52B.0008/input/input4
+[  335.698904] logitech-djdevice 0003:046D:C52B.000A: input,hidraw2: USB HID v1.11 Mouse [Logitech Unifying Device. Wireless PID:1024] on usb-musb-hdrc.1.auto-1:3
+[  369.289801] hub 1-0:1.0: state 7 ports 1 chg 0000 evt 0002
+[  369.289857] hub 1-0:1.0: port 1, status 0100, change 0001, 12 Mb/s
+[  369.289874] usb 1-1: USB disconnect, device number 3
+[  369.289885] usb 1-1: unregistering device
+[  369.289896] usb 1-1: unregistering interface 1-1:1.0
+[  369.290316] usb 1-1: unregistering interface 1-1:1.1
+[  369.290592] usb 1-1: unregistering interface 1-1:1.2
+[  369.290762] usbhid 1-1:1.2: removing 96 minor
+[  369.301644] usb 1-1: usb_disable_device nuking all URBs
+[  369.413022] hub 1-0:1.0: debounce: port 1: total 100ms stable 100ms status 0x100
+[  369.413127] hub 1-0:1.0: hub_suspend
+[  369.413157] usb usb1: bus auto-suspend, wakeup 1
+[  463.528841] usb usb1: usb wakeup-resume
+[  463.528889] usb usb1: usb auto-resume
+[  463.528908] hub 1-0:1.0: hub_resume
+[  463.528946] hub 1-0:1.0: port 1: status 0101 change 0001
+[  463.631659] hub 1-0:1.0: state 7 ports 1 chg 0002 evt 0000
+[  463.631707] hub 1-0:1.0: port 1, status 0101, change 0000, 12 Mb/s
+[  463.737076] usb 1-1: new full-speed USB device number 4 using musb-hdrc
+[  463.856196] usb 1-1: ep0 maxpacket = 8
+[  463.857592] usb 1-1: skipped 1 descriptor after interface
+[  463.857607] usb 1-1: skipped 1 descriptor after interface
+[  463.857617] usb 1-1: skipped 1 descriptor after interface
+[  463.857729] usb 1-1: default language 0x0409
+[  463.858622] usb 1-1: udev 4, busnum 1, minor = 3
+[  463.858639] usb 1-1: New USB device found, idVendor=046d, idProduct=c52b
+[  463.858649] usb 1-1: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[  463.858659] usb 1-1: Product: USB Receiver
+[  463.858667] usb 1-1: Manufacturer: Logitech
+[  463.859068] usb 1-1: usb_probe_device
+[  463.859085] usb 1-1: configuration #1 chosen from 1 choice
+[  463.863636] usb 1-1: adding 1-1:1.0 (config #1, interface 0)
+[  463.863901] usbhid 1-1:1.0: usb_probe_interface
+[  463.863917] usbhid 1-1:1.0: usb_probe_interface - got id
+[  463.865637] usb 1-1: adding 1-1:1.1 (config #1, interface 1)
+[  463.865808] usbhid 1-1:1.1: usb_probe_interface
+[  463.865822] usbhid 1-1:1.1: usb_probe_interface - got id
+[  463.868315] usb 1-1: adding 1-1:1.2 (config #1, interface 2)
+[  463.868498] usbhid 1-1:1.2: usb_probe_interface
+[  463.868512] usbhid 1-1:1.2: usb_probe_interface - got id
+[  463.871972] usbhid 1-1:1.2: looking for a minor, starting at 96
+[  463.875702] logitech-djreceiver 0003:046D:C52B.000D: hiddev0,hidraw0: USB HID v1.11 Device [Logitech USB Receiver] on usb-musb-hdrc.1.auto-1/input2
+[  463.876129] hub 1-0:1.0: state 7 ports 1 chg 0000 evt 0002
+[  463.876161] hub 1-0:1.0: port 1 enable change, status 00000103
+[  469.171212] input: Logitech Unifying Device. Wireless PID:2011 as /devices/ocp.3/47400000.usb/musb-hdrc.1.auto/usb1/1-1/1-1:1.2/0003:046D:C52B.000D/input/input5
+[  469.178070] logitech-djdevice 0003:046D:C52B.000E: input,hidraw1: USB HID v1.11 Keyboard [Logitech Unifying Device. Wireless PID:2011] on usb-musb-hdrc.1.auto-1:1
+[  469.179567] input: Logitech Unifying Device. Wireless PID:1024 as /devices/ocp.3/47400000.usb/musb-hdrc.1.auto/usb1/1-1/1-1:1.2/0003:046D:C52B.000D/input/input6
+[  469.182596] logitech-djdevice 0003:046D:C52B.000F: input,hidraw2: USB HID v1.11 Mouse [Logitech Unifying Device. Wireless PID:1024] on usb-musb-hdrc.1.auto-1:3
